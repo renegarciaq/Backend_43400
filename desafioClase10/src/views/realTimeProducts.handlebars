@@ -1,0 +1,54 @@
+
+<div>
+<h2>Formulario de productos</h2>
+    <form id="formProduct">
+            Title: <input type="text" name="title" id="title" required>
+            Description: <input type="text" name="description" id="description" required>
+            Price: <input type="number" name="price" id="price" required>
+            Code: <input type="text" name="code" id="code" required>
+            Stock: <input type="number" name="stock" id="stock" required>
+            Category: <input type="text" name="category" id="category" required>
+            <input type="submit" value="Enviar">
+        </form>
+</div>
+
+<h2>Eliminar Producto</h2>
+        <form id="deleteProduct">
+            ID: <input type="number" name="id" id="id">
+            <input type="submit" value="Eliminar">
+        </form>
+    </div>
+</div>
+
+<table id="tableProds">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price ($)</th>
+            <th>Stock</th>
+            <th>code</th>
+        </tr>
+    </thead>
+    <tbody id="bodyProd">
+        {{#each products}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{title}}</td>
+            <td>{{description}}</td>
+            <td>{{price}}</td>
+            <td>{{code}}</td>
+            <td>{{stock}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

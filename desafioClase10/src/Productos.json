@@ -1,0 +1,24 @@
+[
+    {
+        "title": "reloj",
+        "description": "Reloj Swatch hombre",
+        "price": 80,
+        "thumbnail": "url",
+        "code": 5,
+        "stock": 20,
+        "category": "relojes",
+        "status": true,
+        "id": 1
+    },
+    {
+        "title": "Aros de oro",
+        "description": "Aros de 18k",
+        "price": 200,
+        "thumbnail": "url",
+        "code": 1,
+        "stock": 10,
+        "category": "joyas",
+        "status": true,
+        "id": 2
+    }
+]

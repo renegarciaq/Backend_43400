@@ -50,7 +50,7 @@ router.put('/:pid', async (req, res) => {
   const { pid } = req.params
   try {
     const productUpdated = await productsManager.updateProduct(+pid, req.body)
-    res.statis(200).json({ message: 'Product updated' })
+    res.status(200).json({ message: 'Product updated' })
   } catch (error) {
     res.status(500).json({ error })
   }
